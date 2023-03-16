@@ -1,0 +1,123 @@
+Introduction to GIT
+
+i) see the git is installed or not 
+git --version
+
+
+ii) See and set the config values 
+Set value
+git config --global user.name "Ravi Kant"
+git config --global user.email "ravi.kant@zemosolabs.com"
+
+see values
+git config --list
+
+
+iii) If need help 
+git help_type --help 
+Eg : git config --help
+git add --help
+
+iv) we use the GIT for the following two Scenario 
+    i) For Local Machine file tracing 
+    
+       git init : git init is a command used in the Git version control system to initialize a new Git repository in a directory. When you run git init in a directory, Git creates a new repository in that directory with a .git subdirectory that contains all of the necessary Git metadata and configuration files.
+       
+       rm -rf .git for removing the git repo
+       
+       
+       touch .gitignore : is a command used to create a new file named .gitignore in the current directory. The .gitignore file is used by Git to specify files or directories that should be ignored by Git when tracking changes to a repository.
+       
+       
+       There are following Stages :
+          1. Working Directory
+          2. Staging area
+          3. .git directory
+              git status : Git will display information about:
+                    The current branch you're on
+                    Untracked files (files that are not currently tracked by Git)
+                    Modified files (files that have been changed since the last commit)
+                    Staged files (files that have been added to the staging area, ready for the next commit)
+               
+               git log : git log is a Git command that displays a log of all the commits made to a Git repository.
+               git add -A : When you run git add -A, Git will add all changes in the current directory and its subdirectories to the staging area, git add -A is a Git command used to stage all changes.
+               for a particular file we can use git add test.java
+
+              git reset or git reset test.java to reset the staging to untracted.
+              
+              For Commit :
+                    git commit -m "This is changed" is a Git command used to create a new commit in the local repository with a commit message of "This is changed".
+                    check with git log
+                    
+    ii) For Remote file tracing :
+    
+        git clone <url> folder_name : to clone the file remotely
+        
+        review the info of repo :
+        git remote -v
+
+        for seeing of branch of the repo :
+        git branch -a
+        
+        if we made the change on the cloned file then to see the changed made :
+        git diff
+        
+        to see the status :
+        git status
+        
+        to add to staging area :
+        git add -A
+        
+        to commit :
+        git commit -m "This ....msg"
+        
+        Then Push the file :
+        git push : git push is used to upload local changes to a remote repository. When you run git push, Git will upload the changes that have been committed to the local repository to the remote repository. This allows you to share your changes with other collaborators and ensure that everyone is working with the same codebase.
+        
+        git pull : git pull is used to download remote changes and merge them into the local repository. When you run git pull, Git will download any changes that have been made to the remote repository and merge them into the current branch of the local repository. This allows you to incorporate changes made by other collaborators into your local repository.
+        
+        
+        
+        
+        
+        
+Git branches allow us to work on multiple versions of a codebase at the same time. The typical Git workflow involves creating a new branch, making changes on that branch, and then merging those changes back into the main branch.
+
+The Git branching workflow:
+
+Create a new branch: Use the git branch command to create a new branch. For example, git branch new-feature will create a new branch called new-feature.
+
+Switch to the new branch: Use the git checkout command to switch to the new branch. For example, git checkout new-feature will switch to the new-feature branch.
+
+Make changes: Make changes to the codebase on the new branch using your preferred text editor or integrated development environment (IDE).
+
+Stage and commit changes: Use the git add command to stage changes and the git commit command to commit changes to the local repository.
+
+Switch back to the main branch: Use the git checkout command to switch back to the main branch. For example, git checkout main will switch back to the main branch.
+
+Merge the new branch: Use the git merge command to merge the changes from the new branch into the main branch. For example, git merge new-feature will merge the changes from the new-feature branch into the main branch.
+
+Resolve conflicts: If there are any conflicts between the changes made on the new branch and the main branch, resolve them manually.
+
+Push changes to remote repository: Use the git push command to push the changes to the remote repository so that other collaborators can access them.
+
+This Git branching workflow allows you to work on multiple versions of a codebase at the same time and collaborate with other developers. By using branches, you can isolate changes and experiment with new features without affecting the main codebase. Once changes have been thoroughly tested and reviewed, they can be merged back into the main branch for everyone to use.
+
+
+
+
+
+Why we will use this :
+
+The Git branching workflow provides several benefits for developers working on a project:
+
+Isolation of changes: By working on a separate branch, you can isolate your changes from the main codebase. This allows you to experiment with new features or make changes without affecting the stability of the main codebase.
+
+Collaboration: The branching workflow allows multiple developers to work on different features or fixes at the same time, without interfering with each other's work. Each developer can work on their own branch and then merge their changes back into the main codebase when they're ready.
+
+Version control: Git branches allow you to create multiple versions of your codebase and track changes over time. This provides a complete history of the project and makes it easy to roll back to previous versions if necessary.
+
+Code review: By using branches, developers can review each other's changes before they are merged into the main codebase. This helps catch errors or bugs early in the development process.
+
+Flexibility: The branching workflow is flexible and can be adapted to suit the needs of your project. You can create as many branches as you need, and merge them together in different ways to create the final product.
+              
