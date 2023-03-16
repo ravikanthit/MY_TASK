@@ -149,4 +149,46 @@ To https://github.com/ravikanthit/MY_TASK.git
    9d81dc2..a748ad7  master -> master
 
 Ravi kant@LAPTOP-Q5R6NUJV MINGW64 ~/Desktop/Task (master)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1.85 KiB | 90.00 KiB/s, done.
+From https://github.com/ravikanthit/MY_TASK
+   a748ad7..9bde23a  master     -> origin/master
+Updating a748ad7..9bde23a
+Fast-forward
+ The_command.sh | 152 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 152 insertions(+)
+ create mode 100644 The_command.sh
+
+Ravi kant@LAPTOP-Q5R6NUJV MINGW64 ~/Desktop/Task (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Ravi kant@LAPTOP-Q5R6NUJV MINGW64 ~/Desktop/Task (master)
+$ git log
+commit 9bde23a22c1b77ba5e1b1ee330a6914bbc548530 (HEAD -> master, origin/master)
+Author: Ravi Kant <68243042+ravikanthit@users.noreply.github.com>
+Date:   Thu Mar 16 08:56:33 2023 +0530
+
+    Create The_command.sh
+
+commit a748ad72dca1d22d6cfc971cf8d8aceea228ae37
+Author: Ravi Kant <ravi.kant@zemosolabs.com>
+Date:   Thu Mar 16 08:54:07 2023 +0530
+
+    Second commit
+
+commit 9d81dc2df4022c29dcca361211f8b56030faa299
+Author: Ravi Kant <ravi.kant@zemosolabs.com>
+Date:   Thu Mar 16 08:46:47 2023 +0530
+
+    First Commit
+
+Ravi kant@LAPTOP-Q5R6NUJV MINGW64 ~/Desktop/Task (master)
 $
